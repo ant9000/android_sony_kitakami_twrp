@@ -22,10 +22,6 @@ TWRP_OUT    := recovery/root
 # Ramdisk fstab file
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 
-# Prebuilt kernel
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilts/kernel:kernel
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
